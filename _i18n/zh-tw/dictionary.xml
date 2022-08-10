@@ -2853,7 +2853,6 @@
   <block id="6f0b081bef5e745ef2429ef74472d9bd" category="cell">1.21.0版</block>
   <block id="681d715b456f6d29a501b8f132e941a1" category="cell">1.22.0版</block>
   <block id="73e93ad328287e5ce4c06228cfdba2bf" category="cell">1.23.0版</block>
-  <block id="01d360dd9f635f6518aed5070edf488f" category="admonition">在Kubernetes版本1.20及更新版本上、只有在「v1」版本提供「volumesnapshots.snapshot.storage」CRD的情況下、才能使用已驗證的「k8s.gcr.io/sig-storage / csi快照：v4.x」映像。如果「v1Beta1」版本使用/不使用「v1」版本來提供CRD、請使用已驗證的「k8s.gcr.IO/SIG-storage / cscs-snapshotter：v3.x」影像。</block>
   <block id="732d0805e41f2db48aa120c357324ee4" category="summary">您可以使用Trident運算子或Tridentctl來部署Astra Trident。</block>
   <block id="42f8643eb52a942747937327c72c8361" category="doc">部署總覽</block>
   <block id="deef9d6bf4083f81d7bd15ae0c9121b6" category="admonition">從22.04版開始、每次安裝Astra Trident時、AES金鑰就不會再重新產生。在這個版本中、Astra Trident會安裝一個新的秘密物件、並在安裝過程中持續存在。這表示22.04中的「tridentctl」可以解除安裝Trident的舊版、但舊版無法解除安裝22.04安裝。</block>
@@ -3168,4 +3167,5 @@
   <block id="c949166d6970748c0094c800daa3324a" category="sidebar">管理Astra Trident</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="sidebar">接下來呢？</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
+  <block id="12ff25435e42ce4eb51634e6d4a5e06c" category="admonition">在Kubernetes版本1.20及更新版本上、只有在「v1」版本提供「volumesnapshots.snapshot.storage」CRD的情況下、才能使用已驗證的「k8s.gcr.io/sig-storage / csi快照：v5.x」影像。如果「v1Beta1」版本使用/不使用「v1」版本來提供CRD、請使用已驗證的「k8s.gcr.IO/SIG-storage / cscs-snapshotter：v3.x」影像。</block>
 </blocks>
