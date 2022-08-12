@@ -1822,7 +1822,6 @@
   <block id="8b4e612e7ec021b91bdf46a69c393a75" category="paragraph">這只是在虛擬儲存資源池及其標籤的威力表面留下一層痕跡。</block>
   <block id="4cfa22b281cbd36e1a275d61ec23a9b4" category="summary">您可以收集記錄以協助疑難排解。收集記錄的方法會因執行Docker外掛程式的方式而有所不同。</block>
   <block id="fe1786b49549e8e06a89b9c57d7fc514" category="doc">收集記錄</block>
-  <block id="d24bae93d00d821b3a8e7ee57c3bd468" category="section-title">收集記錄以進行故障診斷</block>
   <block id="83f4d02d2dd31f09291e098bf4ae502b" category="list-text">如果您使用建議的託管外掛程式方法執行Astra Trident（亦即使用「docker plugin」命令）、請依照下列方式檢視：</block>
   <block id="17c40798131b12188d43b1a90dabfc69" category="paragraph">標準記錄層級應可讓您診斷大多數問題。如果您發現這還不夠、可以啟用偵錯記錄。</block>
   <block id="c28722abec5c1daefa02916119bbff91" category="list-text">若要啟用除錯記錄、請安裝已啟用除錯記錄的外掛程式：</block>
@@ -3168,4 +3167,5 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="sidebar">接下來呢？</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="12ff25435e42ce4eb51634e6d4a5e06c" category="admonition">在Kubernetes版本1.20及更新版本上、只有在「v1」版本提供「volumesnapshots.snapshot.storage」CRD的情況下、才能使用已驗證的「k8s.gcr.io/sig-storage / csi快照：v5.x」影像。如果「v1Beta1」版本使用/不使用「v1」版本來提供CRD、請使用已驗證的「k8s.gcr.IO/SIG-storage / cscs-snapshotter：v3.x」影像。</block>
+  <block id="756909f99bc1a720d318a5f5b94eb094" category="section-title">收集記錄以進行疑難排解</block>
 </blocks>
