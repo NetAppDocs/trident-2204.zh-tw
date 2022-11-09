@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/zh-tw/trident-2204"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -294,6 +305,8 @@
         </a>
       </div>
 
+      
+      
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
@@ -883,7 +896,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/astra-family/"><img src="/zh-tw/trident-2204/images/left_arrow.png" alt=""><pre>All Astra documentation</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/astra-family/"><img src="/zh-tw/trident-2204/images/left_arrow.png" alt=""><pre>所有Astra文件</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -907,7 +920,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 概念</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Astra Trident簡介"
@@ -958,7 +971,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 開始使用</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="歡迎試用"
@@ -988,7 +1001,7 @@
     ><a href="/zh-tw/trident-2204/trident-get-started/kubernetes-deploy-operator.html">
         <div class="na-navbar-padding"> 與Trident營運者一起部署</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="自訂Trident營運者部署"
@@ -1004,7 +1017,7 @@
     ><a href="/zh-tw/trident-2204/trident-get-started/kubernetes-deploy-tridentctl.html">
         <div class="na-navbar-padding"> 使用tridentctl部署</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="自訂試用部署"
@@ -1027,7 +1040,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 管理Astra Trident</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="升級Astra Trident"
@@ -1071,7 +1084,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 使用Astra Trident</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="設定後端"
@@ -1080,7 +1093,7 @@
     ><a href="/zh-tw/trident-2204/trident-use/backends.html">
         <div class="na-navbar-padding"> 設定後端</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="設定ANF後端"
@@ -1110,7 +1123,7 @@
     ><a href="/zh-tw/trident-2204/trident-use/ontap-san.html">
         <div class="na-navbar-padding"> 使用ONTAP SAN驅動程式設定後端</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="準備"
@@ -1133,7 +1146,7 @@
     ><a href="/zh-tw/trident-2204/trident-use/ontap-nas.html">
         <div class="na-navbar-padding"> 使用ONTAP NetApp NAS驅動程式設定後端</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="準備"
@@ -1198,7 +1211,7 @@
     ><a href="/zh-tw/trident-2204/trident-use/vol-operations.html">
         <div class="na-navbar-padding"> 執行Volume作業</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="使用「csi拓撲」"
@@ -1256,7 +1269,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 適合Docker的Astra Trident</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="部署的先決條件"
@@ -1286,7 +1299,7 @@
     ><a href="/zh-tw/trident-2204/trident-docker/volumes-docker.html">
         <div class="na-navbar-padding"> 使用Volume</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="驅動程式專屬的Volume選項"
@@ -1351,7 +1364,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 最佳實務做法與建議</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="部署"
@@ -1395,7 +1408,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 參考資料</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Astra Trident連接埠"
@@ -1463,6 +1476,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -1518,7 +1532,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-08-02 11:20:01 +0000">08/02/2022</time>
+    <time datetime="2022-11-09 17:57:01 +0000">11/09/2022</time>
     
   
 
@@ -1589,7 +1603,7 @@
 <img src="/us-en/trident-2204/images/warning.svg" alt="警告">
 </td>
 <td class="content">
-升級時、務必在Astra Trident使用的「torageClasses」中提供「參數.FSType」。您可以刪除並重新建立「儲存類別」、而不會中斷現有的磁碟區。這是強制實施的一項**要求 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/security-context/" target="_blank" rel="noopener">"安全性內容"</a> 適用於SAN磁碟區。。 <a href="https://github.com/NetApp/trident/tree/master/trident-installer/sample-input" target="_blank" rel="noopener">"範例輸入"</a> 目錄包含範例、例如 <a href="https://github.com/NetApp/trident/blob/master/trident-installer/sample-input/storage-class-basic.yaml.templ" target="_blank" rel="noopener">"「torage-class-base.yaml.templl」"</a> 和 <a href="https://github.com/NetApp/trident/blob/master/trident-installer/sample-input/storage-class-bronze-default.yaml" target="_blank" rel="noopener">""torage-class-bone-default.yaml""</a>。如需詳細資訊、請參閱 <a href="../trident-rn.html" target="_blank" rel="noopener">"已知問題"</a>。
+升級時、務必在Astra Trident使用的「torageClasses」中提供「參數.FSType」。您可以刪除並重新建立「儲存類別」、而不會中斷現有的磁碟區。這是強制實施的一項**要求 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/security-context/" target="_blank" rel="noopener">"安全性內容"</a> 適用於SAN磁碟區。。 <a href="https://github.com/NetApp/trident/tree/master/trident-installer/sample-input" target="_blank" rel="noopener">"範例輸入"</a> 目錄包含範例、例如 <a href="https://github.com/NetApp/trident/blob/master/trident-installer/sample-input/storage-class-basic.yaml.templ" target="_blank" rel="noopener">"9d267d893296d1b56789c03ad196afc8"</a> 和 <a href="https://github.com/NetApp/trident/blob/master/trident-installer/sample-input/storage-class-bronze-default.yaml" target="_blank" rel="noopener">"4e4578e23d9d48bd9338b1581f884392"</a>。如需詳細資訊、請參閱 <a href="../trident-rn.html" target="_blank" rel="noopener">"已知問題"</a>。
 </td>
 </tr>
 </table>
@@ -1694,7 +1708,7 @@
 <p><a href="upgrade-operator.html" target="_blank" rel="noopener">"使用Trident營運者進行升級"</a></p>
 </li>
 <li>
-<p><a href="upgrade-tridentctl.html">"使用「tridentctl」進行升級"</a></p>
+<p><a href="upgrade-tridentctl.html">"b41f68e89b7b02a9077fb800d31a2fbe"</a></p>
 </li>
 </ul>
 </div>
@@ -1737,11 +1751,7 @@
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
-              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
-            </li>
-            <li class="n-footer__copyright-link">
-              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+              <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
             </li>
           </ul>
         </div>
