@@ -16,6 +16,7 @@ summary: 瞭Azure NetApp Files 解如何使用所提供的範例組態、將功�
 
 NOTE: 該支援服務不支援低於100 GB的磁碟區。Azure NetApp Files如果要求較小的磁碟區、Astra Trident會自動建立100-GB磁碟區。
 
+.您需要的產品
 若要設定及使用 https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp Files"^] 後端、您需要下列項目：
 
 * Azure訂閱提供的「SubscriptionID」Azure NetApp Files （含功能不支援的功能）。
@@ -28,6 +29,7 @@ TIP: 若要深入瞭解Azure內建角色、請參閱 https://docs.microsoft.com/
 * 如果Azure NetApp Files 您是第一次使用或是在新的位置使用、則需要進行一些初始組態。請參閱 https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-quickstart-set-up-account-create-volumes["快速入門指南"^]。
 
 
+.關於這項工作
 Trident會根據後端組態（子網路、虛擬網路、服務層級和位置）、在所要求位置可用的容量集區上建立ANF磁碟區、並符合所要求的服務層級和子網路。
 
 
