@@ -1512,7 +1512,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-08-02 11:20:01 +0000">08/02/2022</time>
+    <time datetime="2022-12-14 18:29:55 +0000">12/14/2022</time>
     
   
 
@@ -1540,7 +1540,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="使用tridentbackendconfig管理tridentctl後端">使用TridentBackendConfig管理Tridentctl後端</h2>
+<h2 id="管理-tridentctl-後端使用-tridentbackendconfig">管理 <code>tridentctl</code> 後端使用 <code>TridentBackendConfig</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>本節說明透過Kubernetes介面建立「TridentBackendConfig」物件、直接透過「tridentctl」建立的後端管理所需的步驟。</p>
@@ -1664,7 +1664,7 @@ secret/backend-tbc-ontap-san-secret created</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="步驟2建立tridentbackendconfig-cr">步驟2：建立TridentBackendConfig CR</h3>
+<h3 id="步驟2建立-tridentbackendconfig-cr">步驟2：建立 <code>TridentBackendConfig</code> CR</h3>
 <div class="paragraph">
 <p>下一步是建立一個「TridentBackendConfig」（TridentBackendConfig）CR、它會自動連結至現有的「ONTAP-NAS-backend」（如本範例所示）。確保符合下列要求：</p>
 </div>
@@ -1733,7 +1733,7 @@ tridentbackendconfig.trident.netapp.io/tbc-ontap-nas-backend created</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="步驟3確認tridentbackendconfig-cr的狀態">步驟3：確認TridentBackendConfig CR的狀態</h3>
+<h3 id="步驟3確認的狀態-tridentbackendconfig-cr">步驟3：確認的狀態 <code>TridentBackendConfig</code> CR</h3>
 <div class="paragraph">
 <p>在建立「TridentBackendConfig」之後、其階段必須是「綁定」。它也應反映與現有後端相同的後端名稱和UUID。</p>
 </div>
@@ -1759,7 +1759,7 @@ $ tridentctl get backend -n trident
 </div>
 </div>
 <div class="sect1">
-<h2 id="使用tridentctl管理tridentbackendconfig後端">使用tridentctl管理TridentBackendConfig後端</h2>
+<h2 id="管理-tridentbackendconfig-後端使用-tridentctl">管理 <code>TridentBackendConfig</code> 後端使用 <code>tridentctl</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>可以使用「tridentctl」來列出使用「TridentBackendConfig」建立的後端。此外、系統管理員也可以刪除「TridentBackendConfig」、並確定「pec.deletionPolicy`」設為「效能」、藉此選擇透過「tridentctl」來完全管理此類後端。</p>
@@ -1788,7 +1788,7 @@ $ tridentctl get backend ontap-san-backend -n trident
 </div>
 </div>
 <div class="sect2">
-<h3 id="步驟1確認刪除原則已設定為保留">步驟1：確認刪除原則已設定為保留</h3>
+<h3 id="步驟1確認-deletionpolicy-設為-retain">步驟1：確認 <code>deletionPolicy</code> 設為 <code>retain</code></h3>
 <div class="paragraph">
 <p>讓我們來看看「改革政策」的價值。這需要設定為「維護」。這將確保刪除「TridentBackendConfig」（TridentBackendConfig）的CR時、後端定義仍會存在、而且可以使用「tridentctl」進行管理。</p>
 </div>
@@ -1822,7 +1822,7 @@ backend-tbc-ontap-san   ontap-san-backend   81abcb27-ea63-49bb-b606-0a5315ac5f82
 </div>
 </div>
 <div class="sect2">
-<h3 id="步驟2刪除tridentbackendconfig-cr">步驟2：刪除TridentBackendConfig CR</h3>
+<h3 id="步驟2刪除-tridentbackendconfig-cr">步驟2：刪除 <code>TridentBackendConfig</code> CR</h3>
 <div class="paragraph">
 <p>最後一個步驟是刪除「TridentBackendConfig」（TridentBackendConfig）。確認「刪除原則」設為「保留」之後、您可以繼續刪除：</p>
 </div>
