@@ -3121,4 +3121,6 @@
   <block id="809e945dc23c25ac16aba1fa16892444" category="section-title"><block ref="bc5779a2d33eeb1304bae57f15920cfc" prefix="" category="inline-code"></block> 匯入</block>
   <block id="05390969246d98e9f73cc64a728aabb3" category="section-title">我應該何時使用<block ref="26df55f7460e08309d510282499b6b1d" prefix=" " category="inline-code"></block>？</block>
   <block id="b1d2d86c217e78dcc1bee62d74d3346c" category="section-title">步驟3：建立<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> 並安裝Trident</block>
+  <block id="ad9d572821da9bfff3397f2d3260509d" category="list-text">k8s.gcr.io/sig-storage / csi佈建程式：v3.1.0</block>
+  <block id="bde15093cb0074588628726a59cb0098" category="list-text">k8s.gcr.io/sig-storage / csi快照記錄：v5.0.1</block>
 </blocks>

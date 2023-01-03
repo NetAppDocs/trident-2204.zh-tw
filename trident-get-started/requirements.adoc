@@ -193,10 +193,10 @@ Astra Trident可能需要對儲存系統進行一些變更、才能使用後端�
 | v1.20.0  a| 
 * NetApp/Trident：22.04.0
 * NetApp/Trident自動支援：22.04
-* k8s.gcr.io/sig-storage / csi佈建程式：v2.2.2
+* k8s.gcr.io/sig-storage / csi佈建程式：v3.1.0
 * k8s.gcr.io/sig-storage / csi附加程式：v3.4.0
 * k8s.gcr.io/sig-storage / csi大小調整程式：v1.4.1
-* k8s.gcr.io/sig-storage / csi快照記錄：v3.0.3
+* k8s.gcr.io/sig-storage / csi快照記錄：v5.0.1
 * k8s.gcr.io/sig-storage / csi節點驅動程式登錄程式：v2.5.0
 * NetApp/Trident營運者：22.04.0（選用）
 
@@ -206,10 +206,10 @@ Astra Trident可能需要對儲存系統進行一些變更、才能使用後端�
 | 1.21.0版  a| 
 * NetApp/Trident：22.04.0
 * NetApp/Trident自動支援：22.04
-* k8s.gcr.io/sig-storage / csi佈建程式：v2.2.2
+* k8s.gcr.io/sig-storage / csi佈建程式：v3.1.0
 * k8s.gcr.io/sig-storage / csi附加程式：v3.4.0
 * k8s.gcr.io/sig-storage / csi大小調整程式：v1.4.1
-* k8s.gcr.io/sig-storage / csi快照記錄：v3.0.3
+* k8s.gcr.io/sig-storage / csi快照記錄：v5.0.1
 * k8s.gcr.io/sig-storage / csi節點驅動程式登錄程式：v2.5.0
 * NetApp/Trident營運者：22.04.0（選用）
 
@@ -219,10 +219,10 @@ Astra Trident可能需要對儲存系統進行一些變更、才能使用後端�
 | 1.22.0版  a| 
 * NetApp/Trident：22.04.0
 * NetApp/Trident自動支援：22.04
-* k8s.gcr.io/sig-storage / csi佈建程式：v2.2.2
+* k8s.gcr.io/sig-storage / csi佈建程式：v3.1.0
 * k8s.gcr.io/sig-storage / csi附加程式：v3.4.0
 * k8s.gcr.io/sig-storage / csi大小調整程式：v1.4.1
-* k8s.gcr.io/sig-storage / csi快照記錄：v3.0.3
+* k8s.gcr.io/sig-storage / csi快照記錄：v5.0.1
 * k8s.gcr.io/sig-storage / csi節點驅動程式登錄程式：v2.5.0
 * NetApp/Trident營運者：22.04.0（選用）
 
@@ -232,10 +232,10 @@ Astra Trident可能需要對儲存系統進行一些變更、才能使用後端�
 | 1.23.0版  a| 
 * NetApp/Trident：22.04.0
 * NetApp/Trident自動支援：22.04
-* k8s.gcr.io/sig-storage / csi佈建程式：v2.2.2
+* k8s.gcr.io/sig-storage / csi佈建程式：v3.1.0
 * k8s.gcr.io/sig-storage / csi附加程式：v3.4.0
 * k8s.gcr.io/sig-storage / csi大小調整程式：v1.4.1
-* k8s.gcr.io/sig-storage / csi快照記錄：v3.0.3
+* k8s.gcr.io/sig-storage / csi快照記錄：v5.0.1
 * k8s.gcr.io/sig-storage / csi節點驅動程式登錄程式：v2.5.0
 * NetApp/Trident營運者：22.04.0（選用）
 
