@@ -25,7 +25,7 @@ NOTE: 適用於Google Cloud的NetApp Cloud Volumes Service 支援的CVS效能磁
 * CVS服務帳戶的API金鑰檔
 
 
-Astra Trident現在支援預設的較小磁碟區 https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-type["GCP上的CVS服務類型"^]。對於以「儲存類別=軟體」建立的後端、現在磁碟區的資源配置大小最小為300 GiB。CVS目前在「管制可用度」下提供此功能、並不提供技術支援。使用者必須註冊才能存取低於1TiB的磁碟區 https://docs.google.com/forms/d/e/1FAIpQLSc7_euiPtlV8bhsKWvwBl3gm9KUL4kOhD7lnbHC3LlQ7m02Dw/viewform["請按這裡"^]。NetApp建議客戶使用低於1TiB的磁碟區來處理*非正式作業*的工作負載。
+Astra Trident現在支援預設的較小磁碟區 https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-types["GCP上的CVS服務類型"^]。用於建立的後端 `storageClass=software`、現在、磁碟區的資源配置大小最小可達300 GiB。CVS目前在「管制可用度」下提供此功能、並不提供技術支援。使用者必須註冊才能存取低於1TiB的磁碟區 https://docs.google.com/forms/d/e/1FAIpQLSc7_euiPtlV8bhsKWvwBl3gm9KUL4kOhD7lnbHC3LlQ7m02Dw/viewform["請按這裡"^]。NetApp建議客戶使用低於1TiB的磁碟區來處理*非正式作業*的工作負載。
 
 
 NOTE: 使用預設CVS服務類型（「儲存類別=軟體」）部署後端時、使用者必須取得GCP上的子1TiB磁碟區功能、以取得相關專案編號和專案ID的存取權。這是Astra Trident配置子1TiB磁碟區所需的功能。如果沒有、則低於600 GiB的PVCS將無法建立Volume。使用取得對低於1TiB磁碟區的存取權 https://docs.google.com/forms/d/e/1FAIpQLSc7_euiPtlV8bhsKWvwBl3gm9KUL4kOhD7lnbHC3LlQ7m02Dw/viewform["這份表格"^]。

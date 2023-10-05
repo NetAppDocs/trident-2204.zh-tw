@@ -777,7 +777,6 @@
   <block id="43752d169c5729fffa3a6557a0978cb8" category="list-text">Google Cloud服務帳戶的角色為「netappcloudVolumes.admin」</block>
   <block id="5d6ade9bdfebc79abf4c55e55a2c9941" category="list-text">CVS服務帳戶的API金鑰檔</block>
   <block id="7d0ee86ffc673e47ce20265e1e21317f" category="inline-link">GCP上的CVS服務類型</block>
-  <block id="1f57356f89e79e6730290eddcf7b84ee" category="paragraph">Astra Trident現在支援預設的較小磁碟區<block ref="fc2935a8a76e337f6e814f65964a47b6" category="inline-link-rx"></block>。對於以「儲存類別=軟體」建立的後端、現在磁碟區的資源配置大小最小為300 GiB。CVS目前在「管制可用度」下提供此功能、並不提供技術支援。使用者必須註冊才能存取低於1TiB的磁碟區<block ref="daab940ca038632df7b3bcdb2ce67b4b" category="inline-link-rx"></block>。NetApp建議客戶使用低於1TiB的磁碟區來處理*非正式作業*的工作負載。</block>
   <block id="4525f6e1d5124cd80f38341d78e8a67d" category="inline-link">這份表格</block>
   <block id="adf38902d2794fb5eb0ede6324a90db7" category="admonition">使用預設CVS服務類型（「儲存類別=軟體」）部署後端時、使用者必須取得GCP上的子1TiB磁碟區功能、以取得相關專案編號和專案ID的存取權。這是Astra Trident配置子1TiB磁碟區所需的功能。如果沒有、則低於600 GiB的PVCS將無法建立Volume。使用取得對低於1TiB磁碟區的存取權<block ref="d5347d47b24e3303f1c7b0ae61e08dc7" category="inline-link-rx"></block>。</block>
   <block id="3e6d0b5d82e6a07b21f37953b4f07f2b" category="paragraph">由Astra Trident針對預設CVS服務層級所建立的磁碟區、將會配置如下：</block>
@@ -1097,7 +1096,6 @@
   <block id="abbdd4298bb3e525fd172b2bbe5a451c" category="section-title">我要如何為ONTAP 以NAS配置的Volume設定Unix權限？</block>
   <block id="a535e502931280dfaa539ecd1cbdfc0c" category="paragraph">您可以在後端定義檔中設定參數、以設定Astra Trident所佈建的Volume上的Unix權限。</block>
   <block id="094ef47e6456d60b656401b0f2bbfcbd" category="section-title">如何在ONTAP 配置Volume時、設定一組明確的靜態NFS掛載選項？</block>
-  <block id="84ae0d345d4b749efbbc8103b0770e68" category="paragraph">依預設、Astra Trident不會使用Kubernetes將掛載選項設為任何值。若要在Kubernetes儲存類別中指定掛載選項、請遵循所提供的範例<block ref="cd55c45fce745b7032050d3a7a9ec326" category="inline-link-rx"></block>。</block>
   <block id="ae6bc3659bb0be0a7d9f98a63775b7c2" category="section-title">如何將已配置的磁碟區設定為特定的匯出原則？</block>
   <block id="700a2008fea63d02c24b85f2f75d357e" category="paragraph">若要允許適當的主機存取磁碟區、請使用後端定義檔中設定的「exportPolicy」參數。</block>
   <block id="9d5813dee71bcbf3d3a03c62354c3e55" category="section-title">如何透過Astra Trident搭配ONTAP 使用才能設定Volume加密？</block>
@@ -2400,7 +2398,6 @@
   <block id="ba45a58fb6371fc5a91fb8a5d399becd" category="list-text">如果您已解除安裝了「csi Trident」、而且安裝中的中繼資料持續存在、您可以使用操作者進行升級。</block>
   <block id="33deedceb6eaeb2f124b7ce830e212a8" category="list-text">在特定Kubernetes叢集中的所有命名空間中、只應有一個Astra Trident安裝。</block>
   <block id="878dcbc520738b85944a5907dfa04024" category="inline-link-macro">版本1.18 - 1.24</block>
-  <block id="7a57bf665f59b2b5210561866f3d0749" category="list-text">您應該使用執行的Kubernetes叢集 <block ref="c77fc52aa479fba0c7498cc8cc38caad" category="inline-link-macro-rx"></block>。</block>
   <block id="f5d517b06fc0b1af5d599776e2f6f1d6" category="inline-link">這篇部落格</block>
   <block id="093e1971a4b17fce7e3e4d94854a46ba" category="list-text">如果存在Alpha Snapshot CRD、您應該使用「tridentctl obliviate alpha-snapshot -crd」來移除。這會刪除Alpha Snapshot規格的客戶需求日。如需應刪除/移轉的現有快照、請參閱<block ref="ddf3864130a7be37c683b2fe21303201" category="inline-link-rx"></block>。</block>
   <block id="199ed8c975e8bb544d18428ba17adbc3" category="inline-link">GitHub問題詳細資料</block>
@@ -2414,12 +2411,10 @@
   <block id="d06b5297af318d2581021098f6b0d44d" category="section-title">升級命名空間範圍內的操作員安裝</block>
   <block id="ddfa75d059a999aedec16392aae03bc4" category="paragraph">若要從使用命名空間範圍運算子（20.07到20.10版）安裝的Astra Trident執行個體進行升級、請遵循下列步驟：</block>
   <block id="edf5c542759186ded2c7eeaae6b340a5" category="list-text">確認現有Trident安裝的狀態。要執行此操作、請查看「TridentProvisioner」的*狀態*。狀態應為「Installed」（已安裝）。</block>
-  <block id="f14a1d8e56a0cbd2826edd38778371f7" category="admonition">如果狀態顯示「正在更新」、請務必先解決、再繼續。如需可能狀態值的清單、請參閱<block ref="6aefd1c9ce8e43313a8c7c92e2fac4f3" category="inline-link-rx"></block>。</block>
   <block id="683d018a2f7c70469fd74ba0eeae2a79" category="list-text">使用Trident安裝程式提供的資訊清單、建立「TridentOrchestrator」CRD。</block>
   <block id="ede3d39a1c5211985b126b3f166cf601" category="inline-link">Trident儲存庫</block>
   <block id="af39f09efb6e7b7133433dff92d0fffe" category="list-text">使用命名空間範圍的運算子資訊清單來刪除。若要完成此步驟、您需要使用「bunder.yaml」檔案來部署命名空間範圍的運算子。您可以從取得「bunder.yaml」<block ref="1403b813895a8a78c447fca96240f2ac" category="inline-link-rx"></block>。請務必使用適當的分行。</block>
   <block id="5451265740f1553dff7af7814faa5277" category="inline-link-macro">參數清單</block>
-  <block id="8afea862003d4f613fcffecc022fb20c" category="admonition">刪除命名空間範圍的運算子之後、在安裝叢集範圍的運算子之前、您應該對Trident安裝參數進行必要的變更（例如、變更「tridentImage」、「autosupportImage」、「Private Image儲存庫」的值、以及提供「imagepolSecrets」）。如需可更新的完整參數清單、請參閱 <block ref="e5ef433069537d0999d9cf3f906affdb" category="inline-link-macro-rx"></block>。</block>
   <block id="5fbede7820945c99130183fd2fd0f4b3" category="paragraph">在這個階段、「Trident - oper-xxxxxx-xxxxx" pod會刪除。</block>
   <block id="86463d362af5835ff8c3fd6587fbd24f" category="list-text">（選用）如果需要修改安裝參數、請更新「TridentProvisioner」規格。這些變更可能包括：修改私有映像登錄以從擷取容器映像、啟用偵錯記錄或指定映像提取機密。</block>
   <block id="df486b34cec5fdfba24de79fe6b388d4" category="list-text">安裝叢集範圍的運算子。</block>
@@ -2451,7 +2446,6 @@
   <block id="8d66ed6671344ec6017707c38250329c" category="admonition">所有19.04版及更早版本的升級、都需要將Astra Trident的中繼資料從自己的「etcd」移轉至CRD物件。請務必查看版本文件、瞭解升級的運作方式。</block>
   <block id="33966eba1ed0cde6afda5a97ffaffb09" category="inline-link">安全性內容</block>
   <block id="ceb268093ddd5aa9df1769eda5d1c8cd" category="inline-link">範例輸入</block>
-  <block id="1ca02e26ff81cefae18a0a8d994ca94a" category="admonition">升級時、務必在Astra Trident使用的「torageClasses」中提供「參數.FSType」。您可以刪除並重新建立「儲存類別」、而不會中斷現有的磁碟區。這是強制實施的一項**要求<block ref="cafe4c6014d8c45aaac70e49318f1a2a" category="inline-link-rx"></block> 適用於SAN磁碟區。。<block ref="25daec0b57549a6ad43dbc62a9e717ca" category="inline-link-rx"></block> 目錄包含範例、例如<block ref="d308f4d12b21bf269d64643e1eceeeb2" category="inline-link-rx"></block> 和<block ref="b6ff3ec2ac914a047085c08d5843e316" category="inline-link-rx"></block>。如需詳細資訊、請參閱 <block ref="139a59f2208174d2bf825b80dc580275" category="inline-link-macro-rx"></block>。</block>
   <block id="17cfb8bd7f378fa26b63ee73d467cb82" category="section-title">我應該選擇哪種升級途徑？</block>
   <block id="46940159293e259bcf0bb4df75448100" category="paragraph">您可以使用下列其中一種方法來升級：</block>
   <block id="dc1a9a8ad35cc8aa946e0a2e3f959e2b" category="list-text">使用Trident運算子。</block>
@@ -2601,7 +2595,6 @@
   <block id="7d3f46589c43a64fd040e4f0e0691a86" category="inline-link-macro">掌舵表</block>
   <block id="5d2b4e1d078f05c18e07065fa7df166d" category="list-text">使用Trident <block ref="cdacb2b0d49176a3c0d8cc9d693de833" category="inline-link-macro-rx"></block>：Helm圖表可部署Trident運算子、並在單一步驟中安裝Trident。</block>
   <block id="0d472c887b61206765c1caa63a9290ec" category="inline-link-macro">bunder.yaml</block>
-  <block id="179000091737641056a247acf2c59dc4" category="list-text">手動：Trident提供 <block ref="6f41841ada1b81573b5db54c90d512f9" category="inline-link-macro-rx"></block> 可用於安裝運算子及建立關聯物件的檔案。</block>
   <block id="4a052772dca278b7be31d54ca9f21831" category="inline-link-macro">基本概念</block>
   <block id="e029dd3737acab556b62bda0be50840c" category="admonition">如果您尚未熟悉 <block ref="0342248ee22d08eaf42465a29ddd67ec" category="inline-link-macro-rx"></block>現在正是這麼做的好時機。</block>
   <block id="df2aaa5fa27e9bdafcb6bb0a4367b7d6" category="paragraph">若要部署Astra Trident、必須符合下列先決條件：</block>
@@ -3030,7 +3023,6 @@
   <block id="6394eceb2639574114b02e6e817eb19a" category="sidebar">Astra部落格</block>
   <block id="874d8a5301794a9ca2aba132ac2460f3" category="sidebar">Kubernetes Hub</block>
   <block id="d59c00abbeaf33a9a094b3a69c563405" category="sidebar">NetApp.IO</block>
-  <block id="086e6c16e3fe8e13c336612ef636aa02" category="sidebar">Astra Trident</block>
   <block id="cc4a0df2c635530d752308ab5a1c4b89" category="sidebar">設定ANF後端</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
   <block id="324fb1352ffffb105d10013810c42896" category="sidebar">Kubernetes和Astra Trident物件</block>
@@ -3047,7 +3039,6 @@
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
   <block id="5d40a2b5dc4a222fe46fe927bb2bb348" category="inline-link-macro">自訂您的&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix ="" CATORI='ine-code'/&gt;型部署</block>
   <block id="d874cb235ec1b03394e3293dc2c95d44" category="inline-link-macro">使用&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix ="" CATORIORE ="ine-code'/&gt;進行升級</block>
-  <block id="f21f22dde0e0692333a7a28cce456b08" category="sidebar">所有Astra文件</block>
   <block id="a0d777cf1acc36406564409adef85b17" category="section-title">支援的版本為何<block ref="a226e9fbdfc1c8dd7e7fef4d333f86ed" prefix=" " category="inline-code"></block>？</block>
   <block id="320374572b0089a8b9fce9e448ee4e96" category="section-title">22.04的新功能</block>
   <block id="d3f7afc310875b4ea262305c6d7d6ca2" category="section-title"><block ref="7528035a93ee69cedb1dbddb2f0bfcc8" prefix="" category="inline-code"></block></block>
@@ -3134,4 +3125,12 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="6399f82aaa7cc3927640d4d4314db6f7" category="list-text">手動：Trident提供 <block ref="aa57ade215a476e8e490852ea479a21a" category="inline-link-macro-rx"></block> 可用於安裝運算子及建立關聯物件的檔案。</block>
+  <block id="ae76a896dc13d93b8470e8056f73b0a7" category="list-text">您應該使用執行的Kubernetes叢集  <block ref="e5d49cb3fac65c14adec25700815145b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d9dc9576cf17f7ffa29cbc5572fbca9" category="admonition">如果狀態顯示<block ref="6909beea5b50605780e3411f879fe916" prefix=" " category="inline-code"></block>、請務必先解決此問題、再繼續進行。如需可能狀態值的清單、請參閱 <block ref="c06ff844ca7b2fb8d4c024c18fd54c10" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a1cc8ab35399b4f0871058a2d31762e" category="admonition">您應該對Trident安裝參數進行必要的變更（例如、變更的值）<block ref="d771848c80f96e5954a8658655cf79d7" prefix=" " category="inline-code"></block>、<block ref="7ecc687ea7566f05fd13fde7be607bfc" prefix=" " category="inline-code"></block>、私有映像儲存庫、以及提供<block ref="0d9b54b29da54379cca6b8782b9faae5" prefix=" " category="inline-code"></block>）刪除命名空間範圍的運算子之後、安裝叢集範圍的運算子之前。如需可更新的完整參數清單、請參閱 <block ref="7aeda3f6c09f2ee898e69b86937d442d" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a2849160ee6970b43af32659a185391" category="admonition">升級時、請務必提供<block ref="f6e7f85d8aee15940665bf722f7afac2" prefix=" " category="inline-code"></block> 在中<block ref="f652904c3bfb48fb25a0a75f485f0ff6" prefix=" " category="inline-code"></block> 由Astra Trident使用。您可以刪除並重新建立<block ref="f652904c3bfb48fb25a0a75f485f0ff6" prefix=" " category="inline-code"></block> 無需中斷既有的磁碟區。這是強制實施的一項**要求<block ref="cafe4c6014d8c45aaac70e49318f1a2a" category="inline-link-rx"></block> 適用於SAN磁碟區。。<block ref="25daec0b57549a6ad43dbc62a9e717ca" category="inline-link-rx"></block> 目錄包含範例、例如<block ref="0ce20df6bd6dcd4e1d745bdf09932b86" category="inline-link-rx"></block><block ref="9abb8c7777ddb413820ee07d5d93aa4a" prefix="[" category="inline-code"></block>^]和<block ref="bab3b119449dc236bcd556fb4b3647ac" category="inline-link-rx"></block><block ref="69ae2d9a6d831af7488e53fec053b77e" prefix="[" category="inline-code"></block>^]。
+如需詳細資訊、請參閱 <block ref="04cf7258a315ca08f4b436c194fef69d" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b832ef852805a4e825ca6c6ec5295f7" category="paragraph">Astra Trident現在支援預設的較小磁碟區<block ref="e9e5fc0bc02a6a1b02d344d2f4e0e88a" category="inline-link-rx"></block>。用於建立的後端<block ref="c7237d9128f41df56bf2ba9c87fd26e8" prefix=" " category="inline-code"></block>、現在、磁碟區的資源配置大小最小可達300 GiB。CVS目前在「管制可用度」下提供此功能、並不提供技術支援。使用者必須註冊才能存取低於1TiB的磁碟區<block ref="daab940ca038632df7b3bcdb2ce67b4b" category="inline-link-rx"></block>。NetApp建議客戶使用低於1TiB的磁碟區來處理*非正式作業*的工作負載。</block>
+  <block id="3e9e53a916f99df7d6286c52e3b7a9d5" category="paragraph">依預設、Astra Trident不會使用Kubernetes將掛載選項設為任何值。若要在Kubernetes儲存類別中指定掛載選項、請遵循所提供的範例<block ref="fe27d7e6fa26e46ae96377664e7dbdff" category="inline-link-rx"></block>。</block>
 </blocks>
