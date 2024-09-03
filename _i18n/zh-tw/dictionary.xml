@@ -979,7 +979,6 @@
   <block id="5224919a4ae5ccf610fb0ee74e4e7a94" category="inline-link">Trident AutoSupport 的</block>
   <block id="18bc3bf6223e289af8243b039cd8d702" category="list-text">您可以使用「-自」旗標來指定記錄保留時間範圍。例如：「tridentctl傳送AutoSupport 功能不全、自一小時起」。此資訊是透過Astra Trident一起安裝的「Trident -autodupport」容器來收集和傳送。您可以從取得Container映像<block ref="1b00454f0ab35dcec2ee1a0061efc6e5" category="inline-link-rx"></block>。</block>
   <block id="53084cad3d11df800502598c11e2d10b" category="inline-link">EULA</block>
-  <block id="b9a52e8d1e9b14b8825c6ea01c0ce6d6" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附a<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 這不適用於Trident Container映像本身。您可以深入瞭解NetApp對資料安全性與信任的承諾<block ref="8470ff535916bda3f4ea4723647a7135" category="inline-link-rx"></block>。</block>
   <block id="89f0f2832f60f480805faf638848c5b7" category="paragraph">Astra Trident傳送的有效負載範例如下：</block>
   <block id="d2ec86f126f845e79aff07e70bf89472" category="list-text">此資訊將傳送至NetApp的「不只是」端點。AutoSupport AutoSupport如果您使用私有登錄來儲存容器映像、可以使用「-image-registry」旗標。</block>
   <block id="86c5a11fba83815412aec79f67f2d276" category="list-text">您也可以產生安裝Yaml檔案來設定Proxy URL。您可以使用「tridentctl install -generate-custom-yaml」來建立Yaml檔案、並在「trident部署.yaml」中新增「trident -autodupport」容器的「-proxy-URL」引數。</block>
@@ -1516,33 +1515,10 @@
   <block id="34c4dac14496e9c45d92f345d9392fc8" category="summary">如果您未執行最新版本、則可取得舊版Astra Trident的文件。</block>
   <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="doc">較早版本的文件</block>
   <block id="485e8e209b502a7975830960817b875e" category="paragraph">如果您未執行Astra Trident 22.04、則可取得先前版本的文件。</block>
-  <block id="9f687b4e8cbf2fbb623b26b30fd92717" category="admonition">若為21：07之前的版本、您將被重新導向至舊版文件網站。</block>
   <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
   <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
   <block id="cce172403b73af5c2a4e93081affcc7f" category="inline-link">Astra Trident 21.10</block>
   <block id="606b9e83fb467a43b3065d4fd5037094" category="list-text"><block ref="606b9e83fb467a43b3065d4fd5037094" category="inline-link-rx"></block></block>
-  <block id="a93e9e44b7a375a4236260f5ff2b251e" category="inline-link">Astra Trident 21.07</block>
-  <block id="3830d427e146a8a64454dc373d9b1502" category="list-text"><block ref="3830d427e146a8a64454dc373d9b1502" category="inline-link-rx"></block></block>
-  <block id="0c141ec81d4107f4c63fb0deb2531c0d" category="inline-link">Astra Trident 21.04.</block>
-  <block id="193bfae1ebda99fb7289c66fa69395a0" category="list-text"><block ref="193bfae1ebda99fb7289c66fa69395a0" category="inline-link-rx"></block></block>
-  <block id="cba2c660d905f83e39a0d1771286c9e7" category="inline-link">Astra Trident 21.01.</block>
-  <block id="97f32ab1a5165dc49105dca53b9f4de7" category="list-text"><block ref="97f32ab1a5165dc49105dca53b9f4de7" category="inline-link-rx"></block></block>
-  <block id="727d2d1e15a5c7260e90c50b1c250a4c" category="inline-link">Astra Trident 20.10</block>
-  <block id="8a0315074645cbbab67a7445dcdf42f2" category="list-text"><block ref="8a0315074645cbbab67a7445dcdf42f2" category="inline-link-rx"></block></block>
-  <block id="bad2b8fa41c05085668e48d7c14968dc" category="inline-link">Astra Trident 20.07</block>
-  <block id="449d7e957347de63ee3d9841c40b4e7f" category="list-text"><block ref="449d7e957347de63ee3d9841c40b4e7f" category="inline-link-rx"></block></block>
-  <block id="7c0a09ca9ea4472728e4661755a43c6b" category="inline-link">Astra Trident 20.04</block>
-  <block id="8a72b28486832ed8c725617460afbdcb" category="list-text"><block ref="8a72b28486832ed8c725617460afbdcb" category="inline-link-rx"></block></block>
-  <block id="1dc5429c6c86712d7628beb5652a0e2e" category="inline-link">Astra Trident 20.01</block>
-  <block id="23204facdc38bad335a6afce81db0827" category="list-text"><block ref="23204facdc38bad335a6afce81db0827" category="inline-link-rx"></block></block>
-  <block id="5b2d210bf907d26b59abbaa0e22fbbe6" category="inline-link">Astra Trident 19.10</block>
-  <block id="3377906a52734323c44c8f31b2d29e63" category="list-text"><block ref="3377906a52734323c44c8f31b2d29e63" category="inline-link-rx"></block></block>
-  <block id="f1d7fe87216a18ff3ffcfa98d6065689" category="inline-link">Astra Trident 19.07</block>
-  <block id="12e29d431cea2700aa9d89e0c89e67bc" category="list-text"><block ref="12e29d431cea2700aa9d89e0c89e67bc" category="inline-link-rx"></block></block>
-  <block id="fe4bdabecc64b786523a3d86bb1f9cfd" category="inline-link">Astra Trident 19.04</block>
-  <block id="e43783d5a51a10670edf444f0b58b6af" category="list-text"><block ref="e43783d5a51a10670edf444f0b58b6af" category="inline-link-rx"></block></block>
-  <block id="5e152ff33f3262612abc4b942db27ad1" category="inline-link">Astra Trident 19.01</block>
-  <block id="977636e26059252def0425dca74811ef" category="list-text"><block ref="977636e26059252def0425dca74811ef" category="inline-link-rx"></block></block>
   <block id="23c9c608b55b9071002aeddfd6c5563c" category="summary">您必須先在主機上安裝並設定必要的傳輸協定先決條件、才能部署Astra Trident。</block>
   <block id="782bd8949cb40c80fd3f3126eccab35a" category="doc">部署的先決條件</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">需求</block>
@@ -2200,7 +2176,6 @@
   <block id="65840df7365892d2abe1280cb6cdb1d2" category="paragraph">以下列出部分最佳實務做法文件。搜尋<block ref="4caccef7312f2c398bfbb419629c1a78" category="inline-link-rx"></block> 適用於最新版本。</block>
   <block id="d911b17f4f4cdcca62a04ad77aa9403d" category="paragraph">*《*》ONTAP</block>
   <block id="f9dd52d280693dc59e53b6e1fb7bd801" category="inline-link">NFS最佳實務與實作指南</block>
-  <block id="40bb23d54df7f59219c18f15a346d9e5" category="list-text"><block ref="40bb23d54df7f59219c18f15a346d9e5" category="inline-link-rx"></block></block>
   <block id="a76193f5d9397d9c49ca283a20ccf649" category="inline-link">SAN管理指南</block>
   <block id="5bc9b097037d45aff954bf9bd632d4a4" category="list-text"><block ref="c745f55eb0c9991966e63f0608541bb1" category="inline-link-rx"></block> （適用於iSCSI）</block>
   <block id="5ca34d6ffc2a555b689542e3fbeeb7af" category="inline-link">適用於RHEL的iSCSI Express組態</block>
@@ -2215,15 +2190,11 @@
   <block id="9d0da73b02655dd7861121905db229e2" category="list-text"><block ref="9d0da73b02655dd7861121905db229e2" category="inline-link-rx"></block></block>
   <block id="9aaca8cfd79770bc4944ccc477e37141" category="paragraph">*應用程式最佳實務做法資訊*</block>
   <block id="27a5e02bc2fadee43ace94805739a0c8" category="inline-link">MySQL ONTAP 的最佳實務做法</block>
-  <block id="40d2eaf9adabe99a601c57eabf49e4d3" category="list-text"><block ref="40d2eaf9adabe99a601c57eabf49e4d3" category="inline-link-rx"></block></block>
   <block id="17efdd7d210511985714be299d595292" category="inline-link">MySQL SolidFire 的最佳實務做法</block>
   <block id="d03b53d8ec563c37e16ee8c900a75b96" category="list-text"><block ref="d03b53d8ec563c37e16ee8c900a75b96" category="inline-link-rx"></block></block>
   <block id="3aefe1a041af945f1fe8673bf775057b" category="inline-link">NetApp SolidFire 的功能與Cassandra</block>
-  <block id="7e2b19f6f6bd1332efe1f7a698984670" category="list-text"><block ref="7e2b19f6f6bd1332efe1f7a698984670" category="inline-link-rx"></block></block>
   <block id="6e580111d3a8c12cdcd9522a4d3484c6" category="inline-link">Oracle SolidFire 的最佳實務做法</block>
-  <block id="6db96715cefe9c4950ef722865494128" category="list-text"><block ref="6db96715cefe9c4950ef722865494128" category="inline-link-rx"></block></block>
   <block id="6448cf37496207be126495e5b05851de" category="inline-link">PostgreSQL SolidFire 的最佳實務做法</block>
-  <block id="eb2c92a9d2d39fa7191d6e84d5c33bb5" category="list-text"><block ref="eb2c92a9d2d39fa7191d6e84d5c33bb5" category="inline-link-rx"></block></block>
   <block id="b062996d6ca590abe798d3db75561f79" category="paragraph">並非所有應用程式都有特定的準則、請務必與您的NetApp團隊合作並使用<block ref="4caccef7312f2c398bfbb419629c1a78" category="inline-link-rx"></block> 以尋找最新的文件。</block>
   <block id="d03f8f06d8317baa619ceba8c71e0be3" category="summary">瞭解NetApp儲存平台提供的資料保護與可恢復性選項。Astra Trident可配置磁碟區、以充分利用其中的部分功能。對於每個應用程式、您都應該擁有完整的資料保護與還原策略、而且需要持續性。</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="doc">資料保護</block>
@@ -3011,18 +2982,7 @@
   <block id="d327e8f24b63b83e091dccdc48dd7b1b" category="sidebar">Astra Trident文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">舊版</block>
-  <block id="0629fb104936d0fb60cc736b6cb01caa" category="sidebar">Astra Trident的需求</block>
-  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常見問題集</block>
-  <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">與Trident營運者一起部署</block>
-  <block id="6a693eb5cd23e4e5743663c7edc37aed" category="sidebar">部署適用於Docker的Astra Trident</block>
-  <block id="386307d41b3f4169a1e6e046a727cdd2" category="sidebar">與Trident營運者一起升級</block>
   <block id="eb1f347fa6176ae2c9175df3bc414954" category="sidebar">使用Astra Trident</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">示範教學課程</block>
-  <block id="28348a71bed382b86fa6de4d3a307715" category="sidebar">Astra Trident影片</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格社群</block>
-  <block id="6394eceb2639574114b02e6e817eb19a" category="sidebar">Astra部落格</block>
-  <block id="874d8a5301794a9ca2aba132ac2460f3" category="sidebar">Kubernetes Hub</block>
-  <block id="d59c00abbeaf33a9a094b3a69c563405" category="sidebar">NetApp.IO</block>
   <block id="cc4a0df2c635530d752308ab5a1c4b89" category="sidebar">設定ANF後端</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
   <block id="324fb1352ffffb105d10013810c42896" category="sidebar">Kubernetes和Astra Trident物件</block>
@@ -3133,4 +3093,10 @@
 如需詳細資訊、請參閱 <block ref="04cf7258a315ca08f4b436c194fef69d" category="inline-link-macro-rx"></block>。</block>
   <block id="1b832ef852805a4e825ca6c6ec5295f7" category="paragraph">Astra Trident現在支援預設的較小磁碟區<block ref="e9e5fc0bc02a6a1b02d344d2f4e0e88a" category="inline-link-rx"></block>。用於建立的後端<block ref="c7237d9128f41df56bf2ba9c87fd26e8" prefix=" " category="inline-code"></block>、現在、磁碟區的資源配置大小最小可達300 GiB。CVS目前在「管制可用度」下提供此功能、並不提供技術支援。使用者必須註冊才能存取低於1TiB的磁碟區<block ref="daab940ca038632df7b3bcdb2ce67b4b" category="inline-link-rx"></block>。NetApp建議客戶使用低於1TiB的磁碟區來處理*非正式作業*的工作負載。</block>
   <block id="3e9e53a916f99df7d6286c52e3b7a9d5" category="paragraph">依預設、Astra Trident不會使用Kubernetes將掛載選項設為任何值。若要在Kubernetes儲存類別中指定掛載選項、請遵循所提供的範例<block ref="fe27d7e6fa26e46ae96377664e7dbdff" category="inline-link-rx"></block>。</block>
+  <block id="190dbae19c88b1e68bf03f7783c5d5d1" category="list-text"><block ref="190dbae19c88b1e68bf03f7783c5d5d1" category="inline-link-rx"></block></block>
+  <block id="430c6bcb8516befc45fb8173b0ca4e1f" category="list-text"><block ref="430c6bcb8516befc45fb8173b0ca4e1f" category="inline-link-rx"></block></block>
+  <block id="d7d36869f2f4aa1eb99a10008e153f20" category="list-text"><block ref="d7d36869f2f4aa1eb99a10008e153f20" category="inline-link-rx"></block></block>
+  <block id="f8b52d963f246a75dc6c8b78c954a4fd" category="list-text"><block ref="f8b52d963f246a75dc6c8b78c954a4fd" category="inline-link-rx"></block></block>
+  <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
+  <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 不適用於 Trident 容器映像本身的。您可以深入瞭解 NetApp 對資料安全與信任的承諾<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>。</block>
 </blocks>
