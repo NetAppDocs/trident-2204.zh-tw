@@ -6,7 +6,7 @@ indexpage:
   lead: Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。如需完整版本資訊，包括修補程式版本變更，請參閱
     https://docs.netapp.com/us-en/trident/trident-rn.html.
   tiles:
-  - title: Kubernetes 1.25的重要資訊
+  - title: Kubernetes 1.24的重要資訊
     links:
     - title: 需求
       url: "/trident-get-started/requirements.html"

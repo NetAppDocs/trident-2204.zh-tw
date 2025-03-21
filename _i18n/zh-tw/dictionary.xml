@@ -3098,7 +3098,6 @@
   <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
   <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 不適用於 Trident 容器映像本身的。您可以深入瞭解 NetApp 對資料安全與信任的承諾<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>。</block>
   <block id="6c0abaa198495bc62a07a25b5120401b" category="sidebar">Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。如需完整版本資訊，包括修補程式版本變更，請參閱 https://docs.netapp.com/us-en/trident/trident-rn.html.</block>
-  <block id="dfc322d478fc59cd6375362d8dad7bc0" category="sidebar">Kubernetes 1.25的重要資訊</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常見問題集</block>
   <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">與Trident營運者一起部署</block>
   <block id="6a693eb5cd23e4e5743663c7edc37aed" category="sidebar">部署適用於Docker的Astra Trident</block>
@@ -3110,4 +3109,5 @@
   <block id="874d8a5301794a9ca2aba132ac2460f3" category="sidebar">Kubernetes Hub</block>
   <block id="d59c00abbeaf33a9a094b3a69c563405" category="sidebar">NetApp.IO</block>
   <block id="8f5cc6430613f1c12f36965050bb7197" category="sidebar">不和</block>
+  <block id="9aba1139ac0174f6067d723ab428d43a" category="sidebar">Kubernetes 1.24的重要資訊</block>
 </blocks>
